@@ -1,0 +1,9 @@
+compile:
+gcc -fopenmp Helloworld.c
+
+set environment variable:
+export OMP_NUM_THREADS=2
+
+run:
+./a.out
+

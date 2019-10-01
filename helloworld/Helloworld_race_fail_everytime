@@ -1,0 +1,24 @@
+#include <omp.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (int argc, char *argv[]) 
+{
+int nthreads, tid;
+
+/* Fork a team of threads giving them their own copies of variables */
+#pragma omp parallel 
+  {
+  int i;
+  /* Obtain thread number */
+  tid = omp_get_thread_num();
+
+  for(i=0;i<10000000;i++); //wait statement...
+  
+  printf("Hello World from thread = %d\n", tid); //race condn happens everytime
+  
+
+  }  
+
+}
