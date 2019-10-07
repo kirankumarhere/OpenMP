@@ -1,2 +1,2 @@
 # OpenMP
-Some basic codes in OpenMP.
+Codes executed using openMP.
