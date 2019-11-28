@@ -1,2 +1,2 @@
 # OpenMP
-Codes executed using openMP.
+Codes executed in C using openMP.
